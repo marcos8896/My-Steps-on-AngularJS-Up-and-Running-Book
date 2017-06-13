@@ -1,0 +1,17 @@
+<html ng-app="notesApp"> <head><title>Notes App</title></head>
+<body ng-controller="MainCtrl as ctrl">
+  {{ctrl.helloMsg}} AngularJS.
+  <br/>
+  {{ctrl.goodbyeMsg}} AngularJS
+  <span class="" ng-bind="ctrl.helloMsg"></span>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.js"></script>
+  <script type="text/javascript">
+  angular.module('notesApp', []) .controller('MainCtrl', [function() {
+    const self = this;
+    self.helloMsg = 'Message test... ';
+    self.goodbyeMsg = 'Goodbye '; }]);
+    </script>
+  </body>
+  </html>
+
+  <!-- I left it on page 38 -->
